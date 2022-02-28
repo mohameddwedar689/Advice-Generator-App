@@ -1,0 +1,79 @@
+/* 
+    Colors:
+        Primary: 
+        Light Cyan: hsl(193, 38%, 86%)
+        Neon Green: hsl(150, 100%, 66%)
+        Natural:
+        Grayish Blue: hsl(217, 19%, 38%)
+        Dark Grayish Blue: hsl(217, 19%, 24%)
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color:  #202632;
+}
+.container{
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #313a49;
+    padding: 35px 50px;
+    text-align: center;
+    border-radius: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.first-head{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.second-head{
+    color: hsl(193, 38%, 86%);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.img-1{
+    margin-bottom: 30px;
+}
+.dice-btn{
+    position: absolute;
+    top: 89%;
+    left: 43.5%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(150, 100%, 66%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.dice-btn:active{
+    box-shadow: hsl(150, 100%, 66%, 0.35) 0px 5px 15px; 
+    outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 375px;
+    }
+    .img-1{
+        width: 100%;
+    }
+    .dice-btn{
+        left: 41%;
+    }
+  }
